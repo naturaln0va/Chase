@@ -5,38 +5,36 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+class MainGameScene: SKScene
+{
+    override func didMoveToView(view: SKView)
+    {
+        let atlas = SKTextureAtlas(named: "player")
         
-        self.addChild(myLabel)
+        var textures: Array<SKTexture> = Array<SKTexture>()
+        for i in 0..<3 {
+            let texture: SKTexture = atlas.textureNamed("player_ship_\(i)")
+            texture.filteringMode = .Nearest
+            textures.append(texture)
+        }
+        
+        let ship = SKSpriteNode(texture: textures[0])
+        ship.position = CGPoint(x: 125, y: 200)
+        
+        ship.runAction(SKAction.repeatActionForever(SKAction.animateWithTextures(textures, timePerFrame: 0.05)))
+        
+        addChild(ship)
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
+    {
         for touch in (touches as! Set<UITouch>) {
             let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
         }
     }
-   
-    override func update(currentTime: CFTimeInterval) {
+    
+    override func update(currentTime: CFTimeInterval)
+    {
         /* Called before each frame is rendered */
     }
 }
