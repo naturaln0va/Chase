@@ -25,16 +25,27 @@ class MainGameScene: SKScene
     var cameraTarget = CGPointZero
     
     let entityAtlas = SKTextureAtlas(named: "entities")
-    var player: Player
+    var player: Entity
+    var enemies: [Entity]
     
     override init(size: CGSize)
     {
-        player = Player(position: CGPoint(x: 20, y: 100), texture: entityAtlas.textureNamed("player"))
+        player = Entity(position: CGPoint(x: 20, y: 100), texture: entityAtlas.textureNamed("player"))
         player.zPosition = WorldLayer.LayerPlayer.rawValue
         
         backgroundLayerNode.zPosition = WorldLayer.LayerBackground.rawValue
         backgroundLayerNode.color = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
         backgroundLayerNode.size = size
+        
+        enemies = [Entity]()
+        for i in 0..<25 {
+            let x = CGFloat.random(min: 25, max: 250)
+            let y = CGFloat.random(min: 25, max: 250)
+            let enemy = Entity(position: CGPoint(x: x, y: y), texture: entityAtlas.textureNamed("enemy"))
+            enemy.zPosition = WorldLayer.LayerBelowPlayer.rawValue
+            enemy.zRotation = CGFloat.random(min: 0, max: CGFloat(2 * π))
+            enemies.append(enemy)
+        }
         
         super.init(size: size)
         
@@ -51,6 +62,22 @@ class MainGameScene: SKScene
         createWorld()
         
         worldNode.addChild(player)
+        
+        for enemy in enemies {
+            worldNode.addChild(enemy)
+            enemy.runAction(
+                SKAction.repeatActionForever(
+                    SKAction.sequence([SKAction.waitForDuration(NSTimeInterval(CGFloat.random(min: 0.5, max: 5))),
+                        SKAction.runBlock({
+                            let x = CGFloat.random(min: 5, max: 250)
+                            let y = CGFloat.random(min: 5, max: 250)
+                            let newPoint = CGPoint(x: x, y: y)
+                            enemy.moveToLocation(newPoint)
+                        })
+                    ])
+                )
+            )
+        }
         
         cameraTarget = getCenterPointWithTarget(player.position)
         worldNode.position = cameraTarget
@@ -121,6 +148,6 @@ class MainGameScene: SKScene
     override func update(currentTime: CFTimeInterval)
     {
         cameraTarget = getCenterPointWithTarget(player.position)
-        worldNode.position += (cameraTarget - worldNode.position) * 0.05
+        worldNode.position += (cameraTarget - worldNode.position) * 0.3125
     }
 }

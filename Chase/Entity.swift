@@ -6,7 +6,7 @@
 import SpriteKit
 
 
-class Player: SKNode, SKEntity
+class Entity: SKNode, SKEntity
 {
     var velocity: CGFloat = 0
     var angle: CGFloat = 0

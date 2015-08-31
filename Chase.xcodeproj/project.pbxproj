@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		480902DB1B93A09B000B8AAC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902DA1B93A09B000B8AAC /* Player.swift */; };
+		480902DB1B93A09B000B8AAC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902DA1B93A09B000B8AAC /* Entity.swift */; };
 		480902DD1B93A11B000B8AAC /* SKEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902DC1B93A11B000B8AAC /* SKEntity.swift */; };
 		480902E11B93AE53000B8AAC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902DF1B93AE53000B8AAC /* UIViewExtensions.swift */; };
 		480902E31B93AEF7000B8AAC /* entities.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 480902E21B93AEF7000B8AAC /* entities.atlas */; };
@@ -32,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		480902DA1B93A09B000B8AAC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		480902DA1B93A09B000B8AAC /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		480902DC1B93A11B000B8AAC /* SKEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKEntity.swift; sourceTree = "<group>"; };
 		480902DF1B93AE53000B8AAC /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		480902E21B93AEF7000B8AAC /* entities.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = entities.atlas; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		480902D91B93A08A000B8AAC /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				480902DA1B93A09B000B8AAC /* Player.swift */,
+				480902DA1B93A09B000B8AAC /* Entity.swift */,
 				480902DC1B93A11B000B8AAC /* SKEntity.swift */,
 			);
 			name = Entities;
@@ -252,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				480902DB1B93A09B000B8AAC /* Player.swift in Sources */,
+				480902DB1B93A09B000B8AAC /* Entity.swift in Sources */,
 				480902FB1B93B5A1000B8AAC /* SKTTimingFunctions.swift in Sources */,
 				480902E11B93AE53000B8AAC /* UIViewExtensions.swift in Sources */,
 				480902F31B93B5A1000B8AAC /* CGVector+Extensions.swift in Sources */,
