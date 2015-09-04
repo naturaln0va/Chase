@@ -29,6 +29,25 @@
 		48A0EE4C1B8FE6750059FCFD /* MainGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0EE4B1B8FE6750059FCFD /* MainGameScene.swift */; };
 		48A0EE501B8FE6900059FCFD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0EE4F1B8FE6900059FCFD /* GameViewController.swift */; };
 		48A0EE521B8FE6950059FCFD /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0EE511B8FE6950059FCFD /* WindowController.swift */; };
+		697CB1291B9A17420051D7CB /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CB1281B9A17420051D7CB /* WindowController.swift */; };
+		697CB12F1B9A17420051D7CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697CB12E1B9A17420051D7CB /* Images.xcassets */; };
+		697CB1321B9A17420051D7CB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697CB1301B9A17420051D7CB /* MainMenu.xib */; };
+		697CB1461B9A18340051D7CB /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902E51B93B5A1000B8AAC /* CGFloat+Extensions.swift */; };
+		697CB1471B9A18340051D7CB /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902E61B93B5A1000B8AAC /* CGPoint+Extensions.swift */; };
+		697CB1481B9A18340051D7CB /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902E71B93B5A1000B8AAC /* CGVector+Extensions.swift */; };
+		697CB1491B9A18340051D7CB /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902E81B93B5A1000B8AAC /* Int+Extensions.swift */; };
+		697CB14A1B9A18340051D7CB /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902E91B93B5A1000B8AAC /* SKAction+Extensions.swift */; };
+		697CB14B1B9A18340051D7CB /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902EA1B93B5A1000B8AAC /* SKAction+SpecialEffects.swift */; };
+		697CB14C1B9A18340051D7CB /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902EB1B93B5A1000B8AAC /* SKColor+Extensions.swift */; };
+		697CB14D1B9A18340051D7CB /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902EC1B93B5A1000B8AAC /* SKNode+Extensions.swift */; };
+		697CB14E1B9A18340051D7CB /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902ED1B93B5A1000B8AAC /* SKTAudio.swift */; };
+		697CB14F1B9A18340051D7CB /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902EE1B93B5A1000B8AAC /* SKTEffects.swift */; };
+		697CB1501B9A18340051D7CB /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902EF1B93B5A1000B8AAC /* SKTTimingFunctions.swift */; };
+		697CB1511B9A18340051D7CB /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902F01B93B5A1000B8AAC /* Vector3.swift */; };
+		697CB1521B9A186B0051D7CB /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902DA1B93A09B000B8AAC /* Entity.swift */; };
+		697CB1531B9A186B0051D7CB /* SKEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480902DC1B93A11B000B8AAC /* SKEntity.swift */; };
+		697CB1541B9A186E0051D7CB /* MainGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A0EE4B1B8FE6750059FCFD /* MainGameScene.swift */; };
+		697CB1551B9A29A70051D7CB /* entities.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 480902E21B93AEF7000B8AAC /* entities.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,15 +70,27 @@
 		488EAFC61B8FEB1E004B5AD4 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
 		488EAFC81B8FEB64004B5AD4 /* Chase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A0EE2C1B8FE0470059FCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		48A0EE2E1B8FE0470059FCFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Chase/Images.xcassets; sourceTree = "<group>"; };
+		48A0EE2E1B8FE0470059FCFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48A0EE311B8FE0470059FCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		48A0EE4B1B8FE6750059FCFD /* MainGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainGameScene.swift; path = Scenes/MainGameScene.swift; sourceTree = "<group>"; };
 		48A0EE4F1B8FE6900059FCFD /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "View Controllers/GameViewController.swift"; sourceTree = "<group>"; };
 		48A0EE511B8FE6950059FCFD /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WindowController.swift; path = Controllers/WindowController.swift; sourceTree = "<group>"; };
+		697CB1241B9A17420051D7CB /* ChaseMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaseMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		697CB1271B9A17420051D7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697CB1281B9A17420051D7CB /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		697CB12E1B9A17420051D7CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		697CB1311B9A17420051D7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		48A0EE1B1B8FE0470059FCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697CB1211B9A17420051D7CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,6 +107,7 @@
 				480902DC1B93A11B000B8AAC /* SKEntity.swift */,
 			);
 			name = Entities;
+			path = Chase;
 			sourceTree = "<group>";
 		};
 		480902E41B93B596000B8AAC /* SKTUtils */ = {
@@ -100,7 +132,9 @@
 		48A0EE151B8FE0470059FCFD = {
 			isa = PBXGroup;
 			children = (
+				697CB1451B9A17ED0051D7CB /* Shared */,
 				48A0EE201B8FE0470059FCFD /* Chase */,
+				697CB1251B9A17420051D7CB /* ChaseMac */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				48A0EE561B8FE6CC0059FCFD /* Classes */,
-				48A0EE571B8FE6E00059FCFD /* Libraries */,
 				48A0EE211B8FE0470059FCFD /* Support */,
-				48A0EE581B8FE6FA0059FCFD /* Resources */,
 			);
 			path = Chase;
 			sourceTree = "<group>";
@@ -119,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				488EAFC81B8FEB64004B5AD4 /* Chase.app */,
+				48A0EE2E1B8FE0470059FCFD /* Images.xcassets */,
 				48A0EE2B1B8FE0470059FCFD /* Main.storyboard */,
 				48A0EE301B8FE0470059FCFD /* LaunchScreen.xib */,
 				488EAFC61B8FEB1E004B5AD4 /* app.plist */,
@@ -148,13 +181,12 @@
 				48A0EE4B1B8FE6750059FCFD /* MainGameScene.swift */,
 			);
 			name = Scenes;
+			path = Chase;
 			sourceTree = "<group>";
 		};
 		48A0EE561B8FE6CC0059FCFD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				480902D91B93A08A000B8AAC /* Entities */,
-				48A0EE551B8FE6BB0059FCFD /* Scenes */,
 				48A0EE541B8FE6A60059FCFD /* View Controllers */,
 				48A0EE531B8FE69F0059FCFD /* Controllers */,
 			);
@@ -168,17 +200,48 @@
 				480902DF1B93AE53000B8AAC /* UIViewExtensions.swift */,
 			);
 			name = Libraries;
+			path = Chase;
 			sourceTree = "<group>";
 		};
 		48A0EE581B8FE6FA0059FCFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				48A0EE2E1B8FE0470059FCFD /* Images.xcassets */,
 				480902E21B93AEF7000B8AAC /* entities.atlas */,
 			);
 			name = Resources;
 			path = Chase.xcodeproj;
 			sourceTree = SOURCE_ROOT;
+		};
+		697CB1251B9A17420051D7CB /* ChaseMac */ = {
+			isa = PBXGroup;
+			children = (
+				697CB1281B9A17420051D7CB /* WindowController.swift */,
+				697CB1261B9A17420051D7CB /* Support */,
+			);
+			path = ChaseMac;
+			sourceTree = "<group>";
+		};
+		697CB1261B9A17420051D7CB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				697CB1241B9A17420051D7CB /* ChaseMac.app */,
+				697CB1301B9A17420051D7CB /* MainMenu.xib */,
+				697CB1271B9A17420051D7CB /* Info.plist */,
+				697CB12E1B9A17420051D7CB /* Images.xcassets */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		697CB1451B9A17ED0051D7CB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				48A0EE551B8FE6BB0059FCFD /* Scenes */,
+				480902D91B93A08A000B8AAC /* Entities */,
+				48A0EE581B8FE6FA0059FCFD /* Resources */,
+				48A0EE571B8FE6E00059FCFD /* Libraries */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -200,6 +263,23 @@
 			productReference = 488EAFC81B8FEB64004B5AD4 /* Chase.app */;
 			productType = "com.apple.product-type.application";
 		};
+		697CB1231B9A17420051D7CB /* ChaseMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697CB1431B9A17420051D7CB /* Build configuration list for PBXNativeTarget "ChaseMac" */;
+			buildPhases = (
+				697CB1201B9A17420051D7CB /* Sources */,
+				697CB1211B9A17420051D7CB /* Frameworks */,
+				697CB1221B9A17420051D7CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChaseMac;
+			productName = ChaseMac;
+			productReference = 697CB1241B9A17420051D7CB /* ChaseMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +292,9 @@
 					48A0EE1D1B8FE0470059FCFD = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = WK4Y48HVH2;
+					};
+					697CB1231B9A17420051D7CB = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -229,6 +312,7 @@
 			projectRoot = "";
 			targets = (
 				48A0EE1D1B8FE0470059FCFD /* Chase */,
+				697CB1231B9A17420051D7CB /* ChaseMac */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +326,16 @@
 				48A0EE321B8FE0470059FCFD /* LaunchScreen.xib in Resources */,
 				48A0EE2F1B8FE0470059FCFD /* Images.xcassets in Resources */,
 				48A0EE2D1B8FE0470059FCFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		697CB1221B9A17420051D7CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697CB12F1B9A17420051D7CB /* Images.xcassets in Resources */,
+				697CB1551B9A29A70051D7CB /* entities.atlas in Resources */,
+				697CB1321B9A17420051D7CB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +367,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		697CB1201B9A17420051D7CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697CB14B1B9A18340051D7CB /* SKAction+SpecialEffects.swift in Sources */,
+				697CB14F1B9A18340051D7CB /* SKTEffects.swift in Sources */,
+				697CB1481B9A18340051D7CB /* CGVector+Extensions.swift in Sources */,
+				697CB1541B9A186E0051D7CB /* MainGameScene.swift in Sources */,
+				697CB1531B9A186B0051D7CB /* SKEntity.swift in Sources */,
+				697CB14A1B9A18340051D7CB /* SKAction+Extensions.swift in Sources */,
+				697CB14C1B9A18340051D7CB /* SKColor+Extensions.swift in Sources */,
+				697CB1511B9A18340051D7CB /* Vector3.swift in Sources */,
+				697CB14E1B9A18340051D7CB /* SKTAudio.swift in Sources */,
+				697CB1461B9A18340051D7CB /* CGFloat+Extensions.swift in Sources */,
+				697CB1491B9A18340051D7CB /* Int+Extensions.swift in Sources */,
+				697CB1501B9A18340051D7CB /* SKTTimingFunctions.swift in Sources */,
+				697CB1521B9A186B0051D7CB /* Entity.swift in Sources */,
+				697CB14D1B9A18340051D7CB /* SKNode+Extensions.swift in Sources */,
+				697CB1471B9A18340051D7CB /* CGPoint+Extensions.swift in Sources */,
+				697CB1291B9A17420051D7CB /* WindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -290,6 +407,14 @@
 				48A0EE311B8FE0470059FCFD /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		697CB1301B9A17420051D7CB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				697CB1311B9A17420051D7CB /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +534,39 @@
 			};
 			name = Release;
 		};
+		697CB13F1B9A17420051D7CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChaseMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		697CB1401B9A17420051D7CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChaseMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,6 +584,15 @@
 			buildConfigurations = (
 				48A0EE421B8FE0470059FCFD /* Debug */,
 				48A0EE431B8FE0470059FCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697CB1431B9A17420051D7CB /* Build configuration list for PBXNativeTarget "ChaseMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				697CB13F1B9A17420051D7CB /* Debug */,
+				697CB1401B9A17420051D7CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

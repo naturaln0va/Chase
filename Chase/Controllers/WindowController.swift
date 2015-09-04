@@ -21,6 +21,5 @@ class WindowController: UIResponder, UIApplicationDelegate
     func applicationWillEnterForeground(application: UIApplication) {}
     func applicationDidBecomeActive(application: UIApplication) {}
     func applicationWillTerminate(application: UIApplication) {}
-
 }
 
